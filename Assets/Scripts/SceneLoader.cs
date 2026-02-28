@@ -4,45 +4,17 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
-public class OnSceneLoad : MonoBehaviour
+public class SceneLoader : MonoBehaviour
 {
     public enum scenes
     {
-        Login,
-        Carta,
-        Cueva,
-        Carpa,
-        Crack,
-        Montania1,
-        Pregunta_1,
-        Pregunta_2,
-        Pregunta_3,
-        MiniJuego_1,
-        MiniJuego_2,
-        MiniJuego_3,
-        HoraDeCorrer_nieve,
-        HoraDeCorrer_desierto,
-        HoraDeCorrer_carrera,
-        HoraDeCorrer_castillo,
-        MiniJuego_3_nieve,
-        MiniJuego_3_desierto,
-        MiniJuego_3_carrera,
-        MiniJuego_3_castillo,
-        MiniJuego_4,
-        End,
-        mapaInteractivo,
-        Formulario,
-        Pregunta_4,
-        Pregunta_5,
-        MiniJuego_5,
-        Pregunta_6,
-        MiniJuego_6,
-        Pregunta_7,
-        MiniJuego_7,
-        Pregunta_8,
-        MiniJuego_8,
-
-
+       MainMenu,
+       Intro,
+       MapaInteractivo,
+       MemoTest,
+       MinijuegoFuego,
+       PantallaResultadosFuego,
+       PantallaFinal
     }
 
     [Header("Scene selection")]
