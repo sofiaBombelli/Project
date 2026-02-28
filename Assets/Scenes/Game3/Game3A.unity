@@ -38,12 +38,12 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
+  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
-  serializedVersion: 13
-  m_BakeOnSceneLoad: 0
+  serializedVersion: 12
   m_GISettings:
     serializedVersion: 2
     m_BounceScale: 1
@@ -380,7 +380,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: a09da607e0d346a4ca11a1eb74b6c10a, type: 3}
   m_Resource: {fileID: 8300000, guid: a09da607e0d346a4ca11a1eb74b6c10a, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
@@ -1291,10 +1291,6 @@ PrefabInstance:
     - target: {fileID: 875244797599958971, guid: c3aef29179a5bf34680b8f899bc01884, type: 3}
       propertyPath: m_Name
       value: BotonesContenedor
-      objectReference: {fileID: 0}
-    - target: {fileID: 875244797599958971, guid: c3aef29179a5bf34680b8f899bc01884, type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1956533289757186774, guid: c3aef29179a5bf34680b8f899bc01884, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -2376,10 +2372,6 @@ PrefabInstance:
     - target: {fileID: 2430001596787651047, guid: e99503a89d20103448c91ed8f60d8fd3, type: 3}
       propertyPath: m_Name
       value: Dialogo
-      objectReference: {fileID: 0}
-    - target: {fileID: 2430001596787651047, guid: e99503a89d20103448c91ed8f60d8fd3, type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3010442851139524785, guid: e99503a89d20103448c91ed8f60d8fd3, type: 3}
       propertyPath: m_AnchoredPosition.x
