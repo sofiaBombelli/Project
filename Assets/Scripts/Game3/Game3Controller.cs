@@ -41,7 +41,7 @@ public class Game3Controller : MonoBehaviour
     void Start()
     {
         time = durationTime;
-       // iniciarMinijuego();
+        iniciarMinijuego();
     }
     public void Update()
     {
