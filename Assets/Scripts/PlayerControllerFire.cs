@@ -4,6 +4,7 @@ public class PlayerControllerFire : MonoBehaviour
 {
     public Animator animator;
     public float velocidadMovimiento = 5f;
+    public float velocidadMinima = 0.01f;
 
     void Update()
     {
@@ -20,14 +21,19 @@ public class PlayerControllerFire : MonoBehaviour
         Vector3 direccionMovimiento = new Vector3(movimientoHorizontal, 0f, movimientoVertical);
 
         // Actualizar animación basado en si hay movimiento
-        animator.SetBool("walk", direccionMovimiento.magnitude > 0);
+        animator.SetBool("walk", direccionMovimiento.magnitude > velocidadMinima);
 
         // Aplicar movimiento (solo si hay input)
-        if (direccionMovimiento.magnitude > 0)
+        if (direccionMovimiento.magnitude > velocidadMinima)
         {
             // Normalizar para velocidad consistente en diagonal
             direccionMovimiento.Normalize();
             transform.Translate(direccionMovimiento * velocidadMovimiento * Time.deltaTime);
+            animator.SetBool("idle", false);
+        }
+        else
+        {
+            animator.SetBool("idle", true);
         }
     }
 
