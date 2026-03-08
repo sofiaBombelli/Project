@@ -367,7 +367,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fadeImage: {fileID: 1728432825}
-  sceneToLoad: EndGame
+  sceneToLoad: PantallaResultadosFuego
   fadeDuration: 1
   keyToDetect: 32
 --- !u!82 &127333380
