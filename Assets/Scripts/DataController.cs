@@ -62,6 +62,7 @@ public class DataController : MonoBehaviour
             case "MinijuegoFuego":
                 break;
             case "PantallaResultadosFuego":
+                //puntajeObtenidoMemo
                 break;
             case "PantallaFinal":
                 break;
