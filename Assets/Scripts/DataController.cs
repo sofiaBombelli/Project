@@ -4,7 +4,7 @@ using UnityEngine.SceneManagement;
 public class DataController : MonoBehaviour
 {
     public int puntajeObtenidoMemo = 100;
-    public int puntajeObtenidoFuego = 100;
+    public float puntajeObtenidoFuego = 100;
     public int etapaActual = 1;
     public Bomberos tipoBombero;
 

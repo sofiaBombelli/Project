@@ -6467,6 +6467,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1609229079}
   - component: {fileID: 1609229078}
+  - component: {fileID: 1609229080}
   m_Layer: 0
   m_Name: PlayerController
   m_TagString: Untagged
@@ -6486,7 +6487,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 74d8faa6ddf006a4ea21a9cc8c4a2cee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
-  animator: {fileID: 0}
+  animator: {fileID: 1609229080}
   velocidadMovimiento: 5
   velocidadMinima: 0.01
 --- !u!4 &1609229079
@@ -6505,6 +6506,28 @@ Transform:
   - {fileID: 126436614}
   m_Father: {fileID: 272235164}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &1609229080
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1609229077}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 79f1dcaf5ae35b44f8c126f634532c00, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1785301484
 GameObject:
   m_ObjectHideFlags: 0

@@ -125,13 +125,5 @@ public class MemotestGame : MonoBehaviour
     }
 
 
-    float tiempoInicio;
-    float unidadPorcentual;
-
-    public void CalculoPorcentajePuntos() {
-        unidadPorcentual = 100/ Game3Controller.Instance.durationTime;
-
-
-
-    }
+  
 }

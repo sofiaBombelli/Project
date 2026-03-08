@@ -80,8 +80,8 @@ public class Game3Controller : MonoBehaviour
         {
             doOnce = false;
             // First, give bonus
-            gemasganadas = CalculateCoins();
-            QuestionsController.Instance.sumarGemas(gemasganadas);
+            gemasganadas = CalculateCoins();            
+            CalculoPorcentajePuntos();
             StartCoroutine(giveBonus());
             
         }
@@ -90,6 +90,18 @@ public class Game3Controller : MonoBehaviour
     {
         go.GoToNext();
 
+    }
+
+    float tiempoInicio;
+    float unidadPorcentual;
+
+    public void CalculoPorcentajePuntos()
+    {
+        unidadPorcentual = 100 / Game3Controller.Instance.durationTime;
+        Debug.Log("Unidad porcentual: " + unidadPorcentual);
+        Debug.Log("Tiempo restante: " + time);
+        DataController.Instance.puntajeObtenidoFuego = unidadPorcentual * time;
+        Debug.Log("Puntaje obtenido: " + DataController.Instance.puntajeObtenidoFuego);
     }
     private IEnumerator giveBonus()
     {

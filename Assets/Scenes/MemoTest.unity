@@ -537,7 +537,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8e62f1529831ca747b134d1aa0388e4b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  durationTime: 15
+  durationTime: 30
   go: {fileID: 127333377}
   timeText: {fileID: 1997182163}
   WinPanel: {fileID: 869262495}
@@ -1589,6 +1589,14 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -3.0582275
       objectReference: {fileID: 0}
+    - target: {fileID: 3058249802740467874, guid: dfd426acf7618c24f9a227e06e68d1e3, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 3.801117
+      objectReference: {fileID: 0}
+    - target: {fileID: 3058249802740467874, guid: dfd426acf7618c24f9a227e06e68d1e3, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -3.0062256
+      objectReference: {fileID: 0}
     - target: {fileID: 3750679590769272556, guid: dfd426acf7618c24f9a227e06e68d1e3, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -2598,7 +2606,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5351348995624526093, guid: e99503a89d20103448c91ed8f60d8fd3, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0.090026855
+      value: 0.09008789
       objectReference: {fileID: 0}
     - target: {fileID: 5351348995624526093, guid: e99503a89d20103448c91ed8f60d8fd3, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
