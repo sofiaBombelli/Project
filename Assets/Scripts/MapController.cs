@@ -18,7 +18,7 @@ public class MapController : MonoBehaviour
             }
             else
             {
-                mapElements[i].SetActive(false); // Desactivar los demás elementos
+                //mapElements[i].SetActive(false); // Desactivar los demás elementos
             }
         }
 
