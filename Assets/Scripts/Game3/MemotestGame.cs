@@ -123,4 +123,15 @@ public class MemotestGame : MonoBehaviour
     {
         card.GetComponent<Image>().sprite = cardBack;
     }
+
+
+    float tiempoInicio;
+    float unidadPorcentual;
+
+    public void CalculoPorcentajePuntos() {
+        unidadPorcentual = 100/ Game3Controller.Instance.durationTime;
+
+
+
+    }
 }
