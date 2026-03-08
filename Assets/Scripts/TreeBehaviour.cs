@@ -64,8 +64,16 @@ public class TreeBehaviour : MonoBehaviour
         }
     }
 
-    public void OnTriggerEnter(Collider _other)
+    private void OnCollisionEnter(Collision _collision)
     {
-        Debug.Log("Incendio?"+_other);
+        Debug.Log("OnCollisionEnter");
+        Debug.Log("OnCollisionEnter: " + _collision);
     }
+
+    private void OnTriggerEnter(Collider _other)
+    {
+        Debug.Log("OnTriggerEnter");
+        Debug.Log("OnTriggerEnter: " + _other);
+    }
+
 }
