@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class SceneLoader : MonoBehaviour
 {
+    public AudioClip encendedor;
     public enum scenes
     {
        MainMenu,
@@ -51,6 +52,7 @@ public class SceneLoader : MonoBehaviour
     public void OnButtonClicked()
     {
         StartCoroutine(FadeOutAndLoadScene());
+
         //Debug.Log("Button Clicked!");
     }
 

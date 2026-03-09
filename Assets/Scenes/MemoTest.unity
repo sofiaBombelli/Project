@@ -381,7 +381,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 8300000, guid: a09da607e0d346a4ca11a1eb74b6c10a, type: 3}
+  m_Resource: {fileID: 8300000, guid: c022e26d415809249b3685d2b9ff4175, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -785,6 +785,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 869262493}
     m_Modifications:
+    - target: {fileID: 637277261705011156, guid: 4c42611559bb7bb4e9bb732774177a13, type: 3}
+      propertyPath: m_Resource
+      value: 
+      objectReference: {fileID: 8300000, guid: c022e26d415809249b3685d2b9ff4175, type: 3}
     - target: {fileID: 2435465482153161351, guid: 4c42611559bb7bb4e9bb732774177a13, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -1478,6 +1482,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1383340847}
     m_Modifications:
+    - target: {fileID: 244750492967347697, guid: dfd426acf7618c24f9a227e06e68d1e3, type: 3}
+      propertyPath: m_Resource
+      value: 
+      objectReference: {fileID: 8300000, guid: c022e26d415809249b3685d2b9ff4175, type: 3}
     - target: {fileID: 913451922119987689, guid: dfd426acf7618c24f9a227e06e68d1e3, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -1654,6 +1662,10 @@ PrefabInstance:
       propertyPath: m_Color.a
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3336466779385212599, guid: dfd426acf7618c24f9a227e06e68d1e3, type: 3}
+      propertyPath: m_Resource
+      value: 
+      objectReference: {fileID: 8300000, guid: c022e26d415809249b3685d2b9ff4175, type: 3}
     - target: {fileID: 3347219885168540710, guid: dfd426acf7618c24f9a227e06e68d1e3, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -1674,15 +1686,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5167365391582708692, guid: dfd426acf7618c24f9a227e06e68d1e3, type: 3}
       propertyPath: m_Color.b
-      value: 0.092515126
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5167365391582708692, guid: dfd426acf7618c24f9a227e06e68d1e3, type: 3}
       propertyPath: m_Color.g
-      value: 0.21304457
+      value: 0.7260463
       objectReference: {fileID: 0}
     - target: {fileID: 5167365391582708692, guid: dfd426acf7618c24f9a227e06e68d1e3, type: 3}
       propertyPath: m_Color.r
-      value: 0.254717
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5167365391582708692, guid: dfd426acf7618c24f9a227e06e68d1e3, type: 3}
       propertyPath: m_FontData.m_Font
@@ -1963,7 +1975,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: -3427443288308981933, guid: 35b1b1c9bc6a1b641bcc99025ceb4d82, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1

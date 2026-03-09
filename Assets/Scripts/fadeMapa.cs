@@ -17,7 +17,7 @@ public class fadeMapa : MonoBehaviour
 
     IEnumerator FadeOut()
     {
-        yield return new WaitForSeconds(5);
+        yield return new WaitForSeconds(10);
         float elapsedTime = 0f;
         float startAlpha = canvasGroup.alpha;
         float targetAlpha = 0f;
