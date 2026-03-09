@@ -67,12 +67,16 @@ public class TreeBehaviour : MonoBehaviour
     {
         if (needToStartFire)
         {
-            Fire.StartFire();
+            StartFire();
             needToStartFire = false;
         }
     }
 
-
+    public void StartFire()
+    {
+        Fire.gameObject.SetActive(true);
+        Fire.StartFire();
+    }
 
     private void OnTriggerEnter(Collider _other)
     {
