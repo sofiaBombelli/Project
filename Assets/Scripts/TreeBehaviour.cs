@@ -80,7 +80,7 @@ public class TreeBehaviour : MonoBehaviour
 
     private void OnTriggerEnter(Collider _other)
     {
-        Debug.Log("TREE-OnTriggerEnter: " + _other);
+        //Debug.Log("TREE-OnTriggerEnter: " + _other);
         if (_other.gameObject.tag == "WatherTag")
         {
 

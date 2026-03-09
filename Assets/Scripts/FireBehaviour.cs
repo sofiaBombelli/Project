@@ -84,7 +84,7 @@ public class FireBehaviour : MonoBehaviour
 
     private void OnTriggerEnter(Collider _other)
     {
-        Debug.Log("FIRE-OnTriggerEnter: " + _other);
+        //Debug.Log("FIRE-OnTriggerEnter: " + _other);
         if (_other.gameObject.tag == "WatherTag")
         {
             fireLive -= _other.GetComponent<WatherBehaviour>().watherLive;

@@ -19,7 +19,7 @@ public class WatherBehaviour : MonoBehaviour
 
     private void OnTriggerEnter(Collider _other)
     {
-        Debug.Log("FIRE-OnTriggerEnter: " + _other);
+        //Debug.Log("FIRE-OnTriggerEnter: " + _other);
         if (_other.gameObject.tag == "WatherTag")
         {
         }

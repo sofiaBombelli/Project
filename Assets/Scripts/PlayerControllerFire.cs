@@ -11,6 +11,8 @@ public class PlayerControllerFire : MonoBehaviour
     public float spamWatherTime = 0.1f;
     public float spamWatherSpeed = 0.1f;
 
+    public float speedPlayer = 1f;
+
     public void ShootWater()
     {
         if(Time.time - spamWatherTime > spamWatherSpeed)
@@ -32,10 +34,24 @@ public class PlayerControllerFire : MonoBehaviour
         float movimientoHorizontal = 0f;
         float movimientoVertical = 0f;
 
-        if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.UpArrow)) movimientoVertical = 1f;
-        if (Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.DownArrow)) movimientoVertical = -1f;
-        if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow)) movimientoHorizontal = -1f;
-        if (Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow)) movimientoHorizontal = 1f;
+        float minX = -35f;
+        float maxX = +35f;
+        float minZ = -20f;
+        float maxZ = +20f;
+
+        if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.UpArrow))
+            if ((transform.position.x + speedPlayer) >= minZ)
+                movimientoVertical = speedPlayer;
+        if (Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.DownArrow))
+            if ((transform.position.x + speedPlayer) <= maxZ)
+                movimientoVertical = -speedPlayer;
+        if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow))
+            if ((transform.position.x + speedPlayer) >= minX)
+                movimientoHorizontal = -speedPlayer;
+        if (Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow))
+            if ((transform.position.x + speedPlayer) <= maxX)
+                movimientoHorizontal = speedPlayer;
+
         if (Input.GetKey(KeyCode.Space)) ShootWater();
 
         // Crear vector y verificar si hay movimiento
