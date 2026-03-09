@@ -5,6 +5,10 @@ TagManager:
   serializedVersion: 3
   tags:
   - Minijuego
+  - GemasHud
+  - FireTag
+  - WatherTag
+  - TreeTag
   layers:
   - Default
   - TransparentFX

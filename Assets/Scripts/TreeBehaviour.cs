@@ -7,7 +7,6 @@ public class TreeBehaviour : MonoBehaviour
     public FireBehaviour Fire;
     public float treeLife = 1f;
     public float treeLifeMin = 0.01f;
-    public bool treeOnFire;
     public float timeLocal;
     public float timeCheckSpeed = 0.1f;
 
@@ -15,6 +14,7 @@ public class TreeBehaviour : MonoBehaviour
     void Start()
     {
         timeLocal = Time.time;
+        StartFireTree();
     }
 
     void SetTreeVisible()
@@ -33,9 +33,8 @@ public class TreeBehaviour : MonoBehaviour
 
     void UpdateLife()
     {
-        if (treeOnFire)
+        if (Fire.isFireActive)
         {
-            
             if (treeLife >= treeLifeMin)
             {
                 Fire.StartFire();
@@ -43,7 +42,6 @@ public class TreeBehaviour : MonoBehaviour
             }
             else
             {
-                treeOnFire = false;
                 Fire.StopFire();
             }
         }
@@ -64,16 +62,33 @@ public class TreeBehaviour : MonoBehaviour
         }
     }
 
-    private void OnCollisionEnter(Collision _collision)
+    public bool needToStartFire;
+    public void StartFireTree()
     {
-        Debug.Log("OnCollisionEnter");
-        Debug.Log("OnCollisionEnter: " + _collision);
+        if (needToStartFire)
+        {
+            Fire.StartFire();
+            needToStartFire = false;
+        }
     }
+
+
 
     private void OnTriggerEnter(Collider _other)
     {
-        Debug.Log("OnTriggerEnter");
-        Debug.Log("OnTriggerEnter: " + _other);
+        Debug.Log("TREE-OnTriggerEnter: " + _other);
+        if (_other.gameObject.tag == "WatherTag")
+        {
+
+        }
+        if (_other.gameObject.tag == "FireTag")
+        {
+            Fire.StartFire();
+        }
+        if (_other.gameObject.tag == "TreeTag")
+        {
+
+        }
     }
 
 }
